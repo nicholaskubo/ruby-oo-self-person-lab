@@ -27,10 +27,10 @@ class Person
             @hygiene
         end
     end
-    def happy?
+    def happy
         @happiness > 7 ? true:false
     end
-    def clean?
+    def clean
         @hygiene > 7 ? true:false
     end
     def get_paid (salary)
@@ -51,7 +51,7 @@ class Person
         friend.happiness += 3
         "Hi #{friend.name}! It's #{self.name}. How are you?"
     end
-    def start_conversation(person, topic)
+    def start_convesation(person, topic)
         if (topic == "politics")
             self.happiness -= 2
             person.happiness -= 2
